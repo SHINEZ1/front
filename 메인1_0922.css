@@ -11,7 +11,7 @@
 
 * {
     /* outline: 1px solid blue; */
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NotoSansKR', sans-serif;
 }
 
 body, 
@@ -63,7 +63,7 @@ address {
 #uppermost .content {
     /* outline: 1px solid red; */
     display: flex;
-    font-size: 0.8rem;
+    font-size: 14px;
     font-weight: bold;
     height: 100%;
 }
@@ -72,7 +72,7 @@ address {
 #uppermost > .content  .logo {
     /* outline: 1px solid red; */
     /* font-family: 'ulsanjunggu' ; */
-    font-size: 25px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     /* background: linear-gradient(93deg, rgba(246,179,82,1) 30%, rgba(255,109,0,1) 100%, rgba(255,255,255,1) 100%);
@@ -95,7 +95,7 @@ address {
 
 #uppermost .content .login a {
     /* outline: 1px solid red; */
-    font-size: 0.8rem;
+    font-size: 14px;
 
 }
 
@@ -177,6 +177,8 @@ address {
 
 #gnb .gnb-menu .gnb-menu__item a {
     font-size: 20px;
+    font-weight: bold;
+
 
 }
 
@@ -384,7 +386,7 @@ section{
 	height: 500px;
 	display: flex;
     padding-bottom: 65px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .main_b{
@@ -437,60 +439,81 @@ section{
 
 
 
-/*푸터*/
 
 /* footer */
 footer {
 	width: 100%;
 	background: #333;
-	padding: 20px 0px;
+	/* padding: 20px 0px; */
 	border-top: 1px solid #888;
+    /* outline: 1px solid red; */
+    height: 160px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
-footer .inner {
-	width: 1180px;
-	margin: 0px auto;
+
+
+footer > .footer_container{
+    /* outline: 1px solid red; */
+    width: 80%;
+    height: 100%;
+
 }
-footer .inner .upper {
-	width: 100%;
+
+
+footer > .footer_container .upper {
+    /* width: 100%; */
 	border-bottom: 1px solid #777;
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
+    /* outline: 1px solid red; */
+    display: flex;
+    padding: 20px 0;
 }
-footer .inner .upper::after {
-	/*상단 영역 float해제*/
-	content: "";
-	display: block;
-	clear: both;
+
+footer > .footer_container .upper >h3{
+    color: #888;
+    flex: 7;
+    margin: 0;
+    /* outline: 1px solid red; */
+    margin: auto;    
+    
+    
 }
-footer .inner .upper h1 {
-	float: left;
-	font: bold 24px/1 "arial";
-	color: #666;
+
+footer > .footer_container .upper >ul{
+    /* outline: 1px solid red; */
+    color: #888;
+    display: flex;
 }
-footer .inner .upper ul {
-	float: right;
+
+footer > .footer_container .upper >ul>li{
+    padding-right: 30px;
 }
-footer .inner .upper ul li {
-	float: left;
-	margin-left: 20px;
-}
-footer .inner .upper ul li a {
-	font: bold 14px/1 "arial";
-	color: #666;
-}
-footer .inner .lower {
+
+
+
+
+footer > .footer_container .lower {
 	width: 100%;
-	padding-top: 20px;
+	padding: 20px 0;
+    /* outline: 1px solid red; */
+
 }
-footer .inner .lower address {
+footer > .footer_container address {
 	width: 100%;
-	font: 12px/1.3 "arial";
 	color: #777;
 	margin-bottom: 10px;
+    /* outline: 1px solid red; */
+    font-size: 13px;
+
 }
-footer .inner .lower p {
+footer > .footer_container .lower p {
 	width: 100%;
-	font: 12px/1 "arial";
+	font-size: 13px;
 	color: #777;
+    /* outline: 1px solid red; */
+
 }
 
 

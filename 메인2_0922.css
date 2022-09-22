@@ -48,7 +48,9 @@ address {
 
 
 
-
+.container{
+    border-bottom: 1px solid rgb(133, 133, 133);
+}
 
 
 /*uppermost*/
@@ -61,24 +63,29 @@ address {
     height: 25px;
 }
 
-#uppermost .content {
+#uppermost > .content {
     /* outline: 1px solid red; */
     display: flex;
     font-size: 0.8rem;
     font-weight: bold;
     height: 100%;
     align-items: center;
+    width: 90%;
 }
 
 
-#uppermost  > .content  .logo {
-    outline: 1px solid red;
+#gnb  > .content  .logo  a{
     font-family: 'ulsanjunggu' ;
     font-size: 25px;
     display: flex;
     align-items: center;
-
+    
 }
+
+
+
+
+
 
 #uppermost .content .login {
     /* outline: 1px solid red; */
@@ -87,7 +94,7 @@ address {
     margin-left: auto;
 }
 
-#uppermost .content .login a {
+#uppermost .content .login > a {
     /* outline: 1px solid red; */
     font-size: 0.8rem;
 
@@ -95,7 +102,7 @@ address {
 
 
 #uppermost .content .interval {
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 
@@ -126,6 +133,13 @@ address {
     /* text-align: center; */
     /* width: 80%; */
 /* } */
+
+
+#gnb > .content{
+    /* outline: 1px solid red; */
+    height: 80px;
+    width: 90%;
+}
 
 
 .content-g{
@@ -412,14 +426,14 @@ section{
 
 .main_b{
 	flex: 4;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 	padding: 10px;
 }
 
 .main_m{
 	flex: 6;
 	padding: 10px;
-	/* outline: 1px solid red; */
+	outline: 1px solid red;
 }
 
 
@@ -459,61 +473,79 @@ section{
 
 
 
-
-/*푸터*/
 
 /* footer */
 footer {
 	width: 100%;
 	background: #333;
-	padding: 20px 0px;
+	/* padding: 20px 0px; */
 	border-top: 1px solid #888;
+    /* outline: 1px solid red; */
+    height: 160px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
-footer .inner {
-	width: 1180px;
-	margin: 0px auto;
+
+
+footer > .footer_container{
+    /* outline: 1px solid red; */
+    width: 80%;
+    height: 100%;
+
 }
-footer .inner .upper {
-	width: 100%;
+
+
+footer > .footer_container .upper {
+    /* width: 100%; */
 	border-bottom: 1px solid #777;
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
+    /* outline: 1px solid red; */
+    display: flex;
+    padding: 20px 0;
 }
-footer .inner .upper::after {
-	/*상단 영역 float해제*/
-	content: "";
-	display: block;
-	clear: both;
+
+footer > .footer_container .upper >h3{
+    color: #888;
+    flex: 7;
+    margin: 0;
+    /* outline: 1px solid red; */
+    margin: auto;    
+    
+    
 }
-footer .inner .upper h1 {
-	float: left;
-	font: bold 24px/1 "arial";
-	color: #666;
+
+footer > .footer_container .upper >ul{
+    /* outline: 1px solid red; */
+    color: #888;
+    display: flex;
 }
-footer .inner .upper ul {
-	float: right;
+
+footer > .footer_container .upper >ul>li{
+    padding-right: 30px;
 }
-footer .inner .upper ul li {
-	float: left;
-	margin-left: 20px;
-}
-footer .inner .upper ul li a {
-	font: bold 14px/1 "arial";
-	color: #666;
-}
-footer .inner .lower {
+
+
+
+
+footer > .footer_container .lower {
 	width: 100%;
-	padding-top: 20px;
+	padding: 20px 0;
+    /* outline: 1px solid red; */
+
 }
-footer .inner .lower address {
+footer > .footer_container address {
 	width: 100%;
-	font: 12px/1.3 "arial";
 	color: #777;
 	margin-bottom: 10px;
+    /* outline: 1px solid red; */
+    font-size: 13px;
+
 }
-footer .inner .lower p {
+footer > .footer_container .lower p {
 	width: 100%;
-	font: 12px/1 "arial";
+	font-size: 13px;
 	color: #777;
+    /* outline: 1px solid red; */
+
 }
-
-

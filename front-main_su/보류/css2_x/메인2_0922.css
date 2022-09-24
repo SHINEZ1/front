@@ -1,0 +1,531 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'ulsanjunggu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ulsanjunggu.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+* {
+    outline: 1px solid blue;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body, 
+ul, 
+li , 
+fieldset, 
+legend, 
+h2, 
+p { 
+    margin: 0; padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, 
+li {
+    list-style: none;
+}
+
+address {
+    font-style: normal;
+}
+
+
+
+/*공통*/
+.content { 
+    width: 80%; 
+    margin: 0 auto;
+}
+
+
+
+.container{
+    border-bottom: 1px solid rgb(133, 133, 133);
+}
+
+
+/*uppermost*/
+#uppermost {
+    flex-wrap: nowrap;
+    /* outline: 1px solid red; */
+
+    display: flex;
+    align-items: center;
+    height: 25px;
+}
+
+#uppermost > .content {
+    /* outline: 1px solid red; */
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: bold;
+    height: 100%;
+    align-items: center;
+    width: 90%;
+}
+
+
+#gnb  > .content  .logo  a{
+    font-family: 'ulsanjunggu' ;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+#uppermost .content .login {
+    /* outline: 1px solid red; */
+    padding-top: 0px;
+    padding-right: 10px;
+    margin-left: auto;
+}
+
+#uppermost .content .login > a {
+    /* outline: 1px solid red; */
+    font-size: 0.8rem;
+
+}
+
+
+#uppermost .content .interval {
+    padding: 0 10px;
+}
+
+/*gnb*/
+
+#gnb {
+    /* display: flex; */
+    /* align-items: center; */
+    height: 80px;
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin: 0 auto;
+    /* width: auto; */
+    /* outline: 1px solid red; */
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid #bbb; */
+    
+}
+
+/* #gnb .content { */
+    /* height: 100%; */
+    /* align-items: center; */
+    /* display: flex; */
+    /* text-align: center; */
+    /* width: 80%; */
+/* } */
+
+
+#gnb > .content{
+    /* outline: 1px solid red; */
+    height: 80px;
+    width: 90%;
+}
+
+
+.content-g{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    /* outline: 1px solid red; */
+}
+
+
+ #gnb .content .logo a{
+    flex: 2;
+    font-size: 70px;
+    padding: 0;
+    margin: 0px;
+    font-weight: bold;
+
+}
+
+
+
+
+#gnb .gnb-menu{
+    /* outline: 1px solid red; */
+    display: flex;
+    flex: 6;
+    font-weight: bold;
+    height: 100%;
+    /* color: var(--white-color); */
+    /* text-align: center; */
+    /* outline: 1px solid red; */
+    /* flex-direction: row; */
+    align-items:flex-end;
+    text-align:start ;    
+    padding-bottom: 10px;
+    justify-content:center;
+}
+
+#gnb .gnb-menu .gnb-menu__item {
+    flex-shrink:1;
+    /* flex: 1;   flex-grow:1; flex-shrink:1, flex-basis:0; */
+    /* /* text-align: center; */
+    /* text-align: center;
+    align-items: center; */
+    position: relative;
+    cursor: pointer;
+    /* display: inline-block; */
+    /* width: 80px; */
+    /* height: 30px; */
+    /* text-align: center; */
+    /* line-height: 30px; */
+    /* position: relative; */
+    /* padding-left: 5px; */
+    /* outline: 1px solid red; */
+    /* justify-items:flex-start; */
+    /* padding-left: 60px; */
+    /* outline: 1px solid red; */
+    padding-right: 70px;
+    left: 60px;    
+}
+
+/* #gnb .gnb-menu .gnb-menu__item:nth-of-type(2) { */
+    /* padding-left: 30px; */
+/* } */
+
+
+#gnb .gnb-menu .gnb-menu__item a {
+    font-size: 20px;
+    /* outline: 1px solid red; */
+
+}
+
+
+#gnb .gnb-menu .gnb-menu__item a:hover {
+    /* outline: 1px solid red; */
+    /* border-bottom: 2px solid  #ff6d00; */
+    color: #ff6d00;
+    font-weight: bold;
+    transition: all 0.3s ;
+}
+
+
+#gnb .gnb-menu .gnb-menu__item ul {
+    /* outline: 1px solid red; */
+    display: none;
+    /* margin: 0; */
+    /* padding: 0; */
+    background-color: white;
+    /* width: 100%; */
+    /* height: 90px; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    position: absolute;
+}
+
+#gnb .gnb-menu .gnb-menu__item:hover ul{
+    display: block;
+    position: absolute;
+    /* text-align: center; */
+    line-height: 30px;
+    /* outline: 5px solid #ff6d00; */
+    /* outline: 1px solid red; */
+    /* border-bottom: 2px solid #ff6d00; */
+    /* transition: all 5s; */
+    font-size: 16px;
+    top:53px;
+    /* border-radius: 5px; */
+    width: 100%;
+
+
+}
+
+/* #gnb .gnb-menu .gnb-menu__item:hover ul li{
+    padding: 5px;
+    width: 100%;
+    display: block;
+    outline: 1px solid red; 
+     position: absolute;
+    border-bottom: 1px solid #fabf92;
+    
+} */
+
+#gnb .gnb-menu .gnb-menu__item ul li a{
+    /* outline: 1px solid red; */
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+/*검색창*/
+#gnb .gnb-search{
+    /* outline: 1px solid red; */
+    flex: 2;
+    /* float: right; */
+    /* text-align: center; */
+    align-items:flex-end;
+    /* height: 100%; */
+    /* vertical-align:text-bottom; */
+    display: flex;
+    /* text-align: end; */
+    justify-content:end;
+    position: relative;
+    /* width: 100px; */
+    text-align: end;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+/* .search{ */
+    /* outline: 1px solid red; */
+    /* display: flex;     */
+/* } */
+
+
+
+
+#gnb .gnb-search .search__input{
+    width: 80%;
+    height: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    /* top: 20px; */
+
+}
+
+
+#gnb .gnb-search i{
+    /* outline: 1px solid red; */
+    position: absolute;
+    width: 20px;
+    top: 55px;
+    right: 10px;
+    margin: 0;
+    color: #bbb;
+}
+
+
+
+
+/*메인*/
+section{
+	/* outline: 1px solid red; */
+	display: flex;
+	justify-content: center;
+    padding: 0;
+    margin: 0;
+    /* justify-content: center; */
+
+}
+
+.main_container{
+	width: 80%;
+	/* outline: 1px solid red; */
+    display: block;
+    justify-content: center;
+	
+}
+
+.main_slide{
+	width: 100%;
+	height: 300px;
+	/* padding: 10px; */
+	overflow: hidden;
+	display: flex;
+	/* animation: bannermove 5s linear infinite; */
+	padding: 65px 0;
+	justify-content: center;
+}
+
+/* @keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+} */
+
+.main_slide img{
+	/* outline: 1px solid red; */
+	max-width: 100%;
+	height: auto;
+	padding: 10px;
+
+}
+
+
+
+.main_item{
+	width: 100%;
+	height: 300px;
+	/* padding: 10px; */
+	overflow: hidden;
+	display: flex;
+	/* animation: bannermove 5s linear infinite; */
+    padding: 65px 0;
+    /* padding: 0 0 65px 0; */
+	justify-content: center;
+}
+
+/* @keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+} */
+
+.main_item img{
+	/* outline: 1px solid red; */
+	max-width: 100%;
+	height: auto;
+	padding: 10px;
+
+}
+
+
+.main_wrap{
+	width: 100%;
+	height: 500px;
+	display: flex;
+    padding-bottom: 65px;
+    /* outline: 1px solid red; */
+}
+
+.main_b{
+	flex: 4;
+	outline: 1px solid red;
+	padding: 10px;
+}
+
+.main_m{
+	flex: 6;
+	padding: 10px;
+	outline: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+	width: 100%;
+	background: #333;
+	/* padding: 20px 0px; */
+	border-top: 1px solid #888;
+    /* outline: 1px solid red; */
+    height: 160px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer > .footer_container{
+    /* outline: 1px solid red; */
+    width: 80%;
+    height: 100%;
+
+}
+
+
+footer > .footer_container .upper {
+    /* width: 100%; */
+	border-bottom: 1px solid #777;
+	/* padding-bottom: 20px; */
+    /* outline: 1px solid red; */
+    display: flex;
+    padding: 20px 0;
+}
+
+footer > .footer_container .upper >h3{
+    color: #888;
+    flex: 7;
+    margin: 0;
+    /* outline: 1px solid red; */
+    margin: auto;    
+    
+    
+}
+
+footer > .footer_container .upper >ul{
+    /* outline: 1px solid red; */
+    color: #888;
+    display: flex;
+}
+
+footer > .footer_container .upper >ul>li{
+    padding-right: 30px;
+}
+
+
+
+
+footer > .footer_container .lower {
+	width: 100%;
+	padding: 20px 0;
+    /* outline: 1px solid red; */
+
+}
+footer > .footer_container address {
+	width: 100%;
+	color: #777;
+	margin-bottom: 10px;
+    /* outline: 1px solid red; */
+    font-size: 13px;
+
+}
+footer > .footer_container .lower p {
+	width: 100%;
+	font-size: 13px;
+	color: #777;
+    /* outline: 1px solid red; */
+
+}

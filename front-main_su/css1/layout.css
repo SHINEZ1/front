@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+  /* *{outline: 1px solid sandybrown;} */
+
+body {margin: 0; padding: 0;}
+ul, li, p, input {margin: 0; padding: 0;} 
+ul, li {list-style: none;}
+
+a {
+	text-decoration: none;
+}
+
+a { text-decoration: none;}
+a:visited { text-decoration: none;}
+a:hover { text-decoration: none;}
+a:active { text-decoration: none;}
+
+input {
+    margin: 10px;
+}
+
+#colorbox {
+    height: 1.5rem;
+    background-color: var(--color-main);
+    position: relative;
+}
+
+#colorbox .util {
+	position: absolute;
+	top: 5px;
+	right: 40px;
+}
+
+/* 로그인 메뉴 */
+#colorbox .util li {
+	float: left;
+}
+
+#colorbox .util li a {
+display: block;
+font-weight: bold;
+font-size: 0.8em;
+line-height: 1;
+color: #fff;
+padding: 0px 10px;
+text-decoration: none;
+}
+
+#wapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+      /* margin: 0 auto; */
+}
+  
+
+#wrapper > .container {
+      display: flex;
+      justify-content: center;
+}
+
+  #wrapper > .container > .content {
+      width: 80%;
+  }
+
+  /*uppermost*/
+
+  #wrapper > #uppermost {
+      background-color: var(--color-bg-main);
+  }
+
+  #wrapper > #uppermost > .content{
+      height: 30px;
+      background-color: var(--color-bg-main);
+      display: flex;
+      position: relative;
+  }
+
+  #wrapper > #uppermost > .content a{
+    height: 30px;
+    background-color: var(--color-bg-main);
+    float: right;
+    top: 5px;
+}
+
+/*gnb 메뉴 및 검색창*/
+  #wrapper > #gnb {
+    background-color: var(--color-bg-main);
+    border-bottom: solid 1px silver;
+}
+
+#wrapper > #gnb > .content {
+    height: 50px;
+    background-color: var(--color-bg-main);
+    position: relative;
+    display: flex;
+}
+
+#gnb_content1 {
+    flex: 1;
+    height: 50px;
+    background-color: var(--color-bg-main);
+    position: absolute;
+}
+
+#gnb_content1 > #gnb_menu li {
+	float: left;
+}
+
+#gnb_content1 > #gnb_menu li > a {
+	display: block;/*인라인 요소는 block을 설정하여 크기 조절 가능*/
+	font: bold 15px/1 "arial";
+	color: #555;
+	padding: 10px 20px;
+	transition: all 0.5s;
+    text-decoration: none;
+}  
+
+#gnb_content2 {
+    flex: 2;
+    height: 50px;
+}
+
+#gnb_content2 > #search {
+	float: right;
+}
+
+  /*header*/
+  #wrapper > #header {
+      /* background-color: #6c6f00; */
+      width: 100%;
+      padding: 10px 0px;
+  }
+  #wrapper > #header > .content {
+      height: auto;
+      width: 1180px;
+      margin: 0px auto;
+      /* background-color: #827717; */
+  }
+  
+
+  /*main*/
+  #wrapper > #main {
+      background-color: #6c6f00;
+  } 
+
+  #wrapper > #main > .content {
+      /* display: flex; */
+      border: 5px solid yellowgreen;
+      background-color: #d4e157;
+      box-sizing: border-box; /*경계 안으로 박스가 쳐진다*/
+      width: 100%;
+      padding: 10px 0px;
+  }
+
+    #content__content1 {
+      /* flex: 1; */
+      background-color: red;
+  }
+
+    #content__content2 {
+      /* flex: 2; */
+      background-color: red;
+  }
+
+    #content__content3 {
+      display: flex;
+  }
+
+
+  /*footerMenu*/
+  #wrapper > #footerMenu {
+    background-color: var(--color-footer);
+}
+
+  #wrapper > #footerMenu > .content {
+      width: 100vw;
+      height: 50px;
+      background-color: var(--color-footer);
+  }
+
+  /*footer*/
+  #footer {
+    padding: 5em 0 6em 0 ;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-footer);
+}
+#footer .footer__upper {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+#footer .footer__upper .left {
+    flex: 4;
+}
+#footer .footer__upper .right {
+    flex: 1;
+}
+#footer .footer__lower {
+    flex: 1;
+    font-size: 0.5rem;
+}
+
+
+  /*add*/
+  #add {
+      position: fixed;
+      top: 240px;
+      right: 0;
+      background-color: #d4e157;
+      width: 80px;
+  }
+
+        /*hamburger btn*/
+        #hamburger {
+            display: none; /*숨겨둠*/
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            color: #000;
+        }
+
+        /*슬라이드*/
+        .swiper-container {
+            height:420px;
+            /* border:5px solid silver; */
+            /* border-radius:7px; */
+            /* box-shadow:0 0 20px #ccc inset; */
+        }
+        .swiper-slide {
+            text-align:center;
+            display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+            align-items:center; /* 위아래 기준 중앙정렬 */
+            justify-content:center; /* 좌우 기준 중앙정렬 */
+        }
+        .swiper-slide img {
+            box-shadow:0 0 5px #555;
+            max-width:100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+            /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+        }
+
+
+/*미디어쿼리(스크린 크기에 따라 변형)*/
+@media screen and (max-width: 967px) {
+
+     #hamburger {
+        display: block;/*공간이 넓어지면 노출*/
+     }
+
+    #gnb_content1 > #gnb_menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+        border-top: 0.5px solid rgb(165, 165, 165);
+        border-bottom: 0.5px solid rgb(165, 165, 165);
+     }
+
+     #gnb_content1 > #gnb_menu.active {
+        display: flex;
+     }
+
+}
+

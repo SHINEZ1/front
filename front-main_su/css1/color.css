@@ -1,0 +1,10 @@
+@charset "utf-8";
+:root {
+    --color-bg-main:rgb(255, 255, 255);
+    --color-main: #ff6d00;
+    --color-sub: #0094bc;
+    --color-footer: rgb(80, 71, 68);
+    --color-font-dark: rgb(0,39,1);
+    --color-font-dark2:rgb(80, 71, 68);
+    --color-font-bright: rgb(255,250,240);
+}
